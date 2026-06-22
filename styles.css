@@ -822,6 +822,6 @@ footer.foot {
 .press-logo-square {
   width: min(64%, 132px);
   max-height: 86px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 0;
+  object-fit: contain;
 }
