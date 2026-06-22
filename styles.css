@@ -825,3 +825,11 @@ footer.foot {
   border-radius: 0;
   object-fit: contain;
 }
+
+.channel-icon-spotify svg {
+  width: 24px;
+  height: 24px;
+}
+.channel-icon-spotify {
+  background: var(--volt) !important;
+}
