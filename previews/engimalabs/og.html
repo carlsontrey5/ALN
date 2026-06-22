@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ALN · OpenGraph Card · 1200×630</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void: #000000;
+    --carbon: #0A0A0A;
+    --bone: #FAFAFA;
+    --ash: #888888;
+    --volt: #3e9bdc;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #1a1a1a; font-family: 'Inter', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  body { padding: 40px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+
+  .stage-label {
+    color: #999; font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: .25em; text-transform: uppercase;
+    align-self: flex-start;
+  }
+
+  /* ============================================================
+     OG CARD — 1200 × 630 · BOLD BRANDING STATEMENT
+     Composition: full-bleed wordmark.
+     One typographic moment. One volt halo. No HUD.
+     ============================================================ */
+  .og {
+    width: 1200px;
+    height: 630px;
+    background: var(--void);
+    position: relative;
+    overflow: hidden;
+    color: var(--bone);
+    box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.04);
+  }
+
+  /* the volt halo — single light source, off-center, alien-sun */
+  .halo {
+    position: absolute;
+    width: 1000px; height: 1000px;
+    left: 56%; top: -280px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center,
+                  rgba(62,155,220,.55) 0%,
+                  rgba(62,155,220,.18) 25%,
+                  rgba(62,155,220,.04) 55%,
+                  transparent 72%);
+    filter: blur(2px);
+    pointer-events: none;
+  }
+
+  /* a fine inner ring — suggests aperture / iris / lens */
+  .ring {
+    position: absolute;
+    width: 540px; height: 540px;
+    left: calc(56% + 230px); top: -40px;
+    border-radius: 50%;
+    border: 1px solid rgba(62,155,220,.35);
+    box-shadow: inset 0 0 60px rgba(62,155,220,.15);
+    pointer-events: none;
+  }
+  .ring::before {
+    content: '';
+    position: absolute; inset: 70px;
+    border-radius: 50%;
+    border: 1px dashed rgba(62,155,220,.18);
+  }
+
+  /* faint grid floor */
+  .og::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size: 96px 96px;
+    mask-image: linear-gradient(180deg, transparent 0%, black 60%);
+  }
+
+  /* sparse star dust */
+  .og::after {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(2px 2px at 8% 18%, rgba(255,255,255,.55), transparent 50%),
+      radial-gradient(1.5px 1.5px at 22% 38%, rgba(255,255,255,.4), transparent 50%),
+      radial-gradient(1.5px 1.5px at 14% 70%, rgba(255,255,255,.5), transparent 50%),
+      radial-gradient(2px 2px at 32% 82%, rgba(255,255,255,.3), transparent 50%),
+      radial-gradient(1px 1px at 4% 50%, rgba(255,255,255,.5), transparent 50%),
+      radial-gradient(1.5px 1.5px at 90% 50%, rgba(255,255,255,.35), transparent 50%);
+    pointer-events: none;
+  }
+
+  /* ----- type ----- */
+  .og-inner {
+    position: absolute; inset: 0;
+    z-index: 2;
+    padding: 64px 80px;
+    display: flex; flex-direction: column;
+  }
+
+  /* tiny tag at top — one line, one move */
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: .42em;
+    text-transform: uppercase;
+    color: var(--bone);
+    display: flex; align-items: center; gap: 16px;
+  }
+  .tag .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--volt);
+    box-shadow: 0 0 14px var(--volt);
+    flex-shrink: 0;
+  }
+  .tag .grey { color: var(--ash); }
+
+  /* the wordmark — the whole point of the card */
+  .wordmark {
+    margin-top: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 154px;
+    line-height: .88;
+    letter-spacing: -.055em;
+    color: var(--bone);
+    text-transform: uppercase;
+  }
+  .wordmark .row { display: block; }
+  .wordmark .last {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--volt);
+    text-transform: lowercase;
+    letter-spacing: -.02em;
+    font-size: 172px;
+    line-height: .92;
+    text-shadow: 0 0 60px rgba(62,155,220,.45);
+    padding-left: 18px;
+  }
+  .wordmark .period {
+    color: var(--volt);
+    text-shadow: 0 0 30px rgba(62,155,220,.6);
+  }
+
+  /* bottom rule — one thin tagline */
+  .foot {
+    position: absolute;
+    left: 80px; right: 80px; bottom: 56px;
+    display: flex; align-items: end; justify-content: space-between;
+    gap: 32px;
+  }
+  .tagline {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: -.005em;
+    color: var(--bone);
+    line-height: 1;
+    max-width: 720px;
+  }
+  .domain {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    color: var(--ash);
+    white-space: nowrap;
+  }
+
+  /* corner brand logo */
+  .anchor {
+    position: absolute;
+    top: 56px; right: 72px;
+    z-index: 3;
+  }
+  .anchor img {
+    height: 72px;
+    width: auto;
+    display: block;
+  }
+
+  /* spec strip below preview */
+  .spec {
+    color: #666; font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .spec b { color: #aaa; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<div class="stage-label">opengraph · 1200 × 630 · aliens last night · v2 bold</div>
+
+<div class="og">
+  <div class="halo"></div>
+  <div class="ring"></div>
+
+  <div class="anchor">
+    <img src="ALN2liner_white.png" alt="Aliens Last Night">
+  </div>
+
+  <div class="og-inner">
+    <div class="tag">
+      <span class="dot"></span>
+      <span>Evidence <span class="grey">·</span> Defense <span class="grey">·</span> Policy</span>
+    </div>
+
+    <h1 class="wordmark">
+      <span class="row">Aliens</span>
+      <span class="row last">last</span>
+      <span class="row">Night<span class="period">.</span></span>
+    </h1>
+  </div>
+
+  <div class="foot">
+    <div class="tagline">From the people who were actually there.</div>
+    <div class="domain">alienslastnightofficial.com</div>
+  </div>
+</div>
+
+<div class="spec"><b>1200 × 630</b> · bold v2 · wordmark-led, hud stripped</div>
+
+</body>
+</html>
