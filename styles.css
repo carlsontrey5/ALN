@@ -1149,3 +1149,20 @@ body::after {
 .btn-primary, .nav-cta, .signal-search-action {
   box-shadow: 0 0 38px rgba(62,155,220,.24);
 }
+
+
+/* Featured-in logo treatment */
+.press-logo {
+  width: min(78%, 180px);
+  max-height: 42px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.12);
+  opacity: .92;
+  transition: opacity .2s ease, filter .2s ease, transform .2s ease;
+}
+.press-logo-wide { width: min(86%, 230px); }
+.press-item:hover .press-logo {
+  opacity: 1;
+  filter: grayscale(1) contrast(1.22);
+  transform: translateY(-1px);
+}
