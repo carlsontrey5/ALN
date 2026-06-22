@@ -1173,3 +1173,19 @@ body::after {
   border-radius: 0;
   object-fit: contain;
 }
+
+.press.press-five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+@media (max-width: 900px) {
+  .press.press-five { grid-template-columns: 1fr 1fr; }
+  .press.press-five .press-item:last-child { grid-column: 1 / -1; }
+}
+
+.channel-icon-spotify svg {
+  width: 24px;
+  height: 24px;
+}
+.channel-icon-spotify {
+  background: var(--volt) !important;
+}
