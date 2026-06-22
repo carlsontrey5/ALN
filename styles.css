@@ -1166,3 +1166,10 @@ body::after {
   filter: grayscale(1) contrast(1.22);
   transform: translateY(-1px);
 }
+
+.press-logo-square {
+  width: min(64%, 132px);
+  max-height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+}
