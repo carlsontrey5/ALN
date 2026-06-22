@@ -951,7 +951,7 @@ body::after {
   font-weight: 700;
   line-height: .78;
   letter-spacing: -.075em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 .hero-display em {
   color: transparent;
@@ -1141,4 +1141,11 @@ body::after {
   .signal-search { grid-template-columns: auto 1fr; border-radius: 28px; }
   .signal-search-action { grid-column: 1 / -1; text-align: center; }
   .stats { grid-template-columns: 1fr; }
+}
+
+.signal-search {
+  box-shadow: 0 24px 110px rgba(62,155,220,.16), 0 0 0 7px rgba(62,155,220,.08);
+}
+.btn-primary, .nav-cta, .signal-search-action {
+  box-shadow: 0 0 38px rgba(62,155,220,.24);
 }
