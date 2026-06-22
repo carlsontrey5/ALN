@@ -21,4 +21,4 @@ Then open http://127.0.0.1:8765/.
 
 ## Deployment
 
-This is a static site and can be deployed directly with GitHub Pages from the repository root.
+This is a static site deployed from the repository root with GitHub Pages.
