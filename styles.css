@@ -1180,5 +1180,6 @@ body::after {
   height: 24px;
 }
 .channel-icon-spotify {
-  background: var(--volt) !important;
+  background: #000 !important;
+  border: 1px solid rgba(255,255,255,.78) !important;
 }
