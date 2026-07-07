@@ -1352,3 +1352,38 @@ form .legal,
   .hero-logo-display { margin-bottom: 24px; }
   .hero-wordmark { width: min(520px, 92vw); }
 }
+
+
+/* Hero wordmark layout to match approved mockup */
+.hero:not(.compact) {
+  min-height: 86vh;
+  display: grid;
+  align-items: center;
+  padding: 112px 0 96px;
+}
+.hero:not(.compact) .hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero:not(.compact) .hero-kicker {
+  margin-bottom: 34px;
+}
+.hero:not(.compact) .hero-logo-display {
+  max-width: min(760px, 82vw);
+  margin: 0 auto 32px;
+}
+.hero:not(.compact) .hero-wordmark {
+  width: min(720px, 82vw);
+  margin: 0 auto;
+}
+.hero:not(.compact) .hero-ctas {
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  .hero:not(.compact) { min-height: 78vh; padding: 96px 0 72px; }
+  .hero:not(.compact) .hero-kicker { margin-bottom: 24px; }
+  .hero:not(.compact) .hero-logo-display { max-width: 92vw; margin-bottom: 26px; }
+  .hero:not(.compact) .hero-wordmark { width: 92vw; }
+}
