@@ -1597,12 +1597,26 @@ h4,
   display: flex;
   flex-direction: column;
   gap: 18px;
-  min-height: 320px;
+  min-height: 0;
+  padding: 34px 30px 30px;
+  overflow: visible;
+}
+.episode-card .qcard-num {
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+.episode-card h3 {
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
 }
 .episode-card p {
   color: var(--ash);
+  font-size: 15px;
+  line-height: 1.55;
+  max-width: 100%;
 }
 .episode-card .btn {
   align-self: flex-start;
-  margin-top: auto;
+  margin-top: 12px;
 }
