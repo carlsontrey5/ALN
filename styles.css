@@ -1387,3 +1387,37 @@ form .legal,
   .hero:not(.compact) .hero-logo-display { max-width: 92vw; margin-bottom: 26px; }
   .hero:not(.compact) .hero-wordmark { width: 92vw; }
 }
+
+
+/* Hero text title layout: Aliens Last Night */
+.hero:not(.compact) .hero-title-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(980px, 92vw);
+  margin: 0 auto 34px;
+  color: #fff;
+  font-family: var(--adineue) !important;
+  font-size: clamp(78px, 10.5vw, 168px);
+  font-weight: 700 !important;
+  line-height: .83;
+  letter-spacing: -.075em;
+  text-align: center;
+  text-transform: none !important;
+  text-shadow: 0 22px 80px rgba(0,0,0,.45);
+}
+.hero:not(.compact) .hero-title-display span {
+  display: block;
+  white-space: nowrap;
+}
+.hero:not(.compact) .hero-title-display span:last-child {
+  font-size: .94em;
+}
+@media (max-width: 760px) {
+  .hero:not(.compact) .hero-title-display {
+    font-size: clamp(54px, 17vw, 92px);
+    line-height: .88;
+    letter-spacing: -.065em;
+    margin-bottom: 28px;
+  }
+}
