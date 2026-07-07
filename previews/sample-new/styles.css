@@ -18,9 +18,10 @@
   --line-soft: rgba(255, 255, 255, 0.06);
   --line-strong: rgba(255, 255, 255, 0.22);
 
-  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
-  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --serif: 'Instrument Serif', Georgia, serif;
+  --adineue: 'Adineue Pro', 'adineue PRO', 'AdineuePRO', 'Helvetica Neue', Arial, sans-serif;
+  --mono: var(--adineue);
+  --sans: var(--adineue);
+  --serif: var(--adineue);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1218,3 +1219,118 @@ body::after {
   .resource-qnav { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) { .audience-metrics { grid-template-columns: 1fr; } }
+
+
+/* Adineue Pro typography system */
+body,
+button,
+input,
+textarea,
+select,
+.nav,
+.nav-links a,
+.nav-cta,
+.btn,
+.hero-kicker,
+.hero-display,
+.hero-sub,
+.section-head h2,
+.section-head p,
+.reel-tab,
+.stat-num,
+.stat-label,
+.press-item,
+.drop-platform,
+.drop-title,
+.drop-time,
+.story-tag,
+.story-title,
+.story-dek,
+.story-foot,
+.channel-name,
+.channel-handle,
+.channel-cta,
+.qcard-num,
+.qcard-title,
+.qcard-desc,
+.pillar-num,
+.pillar-name,
+.pillar-desc,
+.std-num,
+.std-title,
+.std-body,
+.value-num,
+.value-title,
+.value-body,
+.audience-lab,
+.audience-h,
+.bar-label,
+.bar-val,
+.geo-row,
+.form-lede h2,
+.form-lede p,
+.form-meta,
+form label,
+form .legal,
+.foot-col h4,
+.foot-news h4,
+.foot-col a,
+.foot-news p,
+.foot-bottom {
+  font-family: var(--adineue) !important;
+}
+
+.hero-display,
+.section-head h2,
+.section h2,
+.mission-strip-title,
+.qcard-title,
+.stat-num,
+.story-title,
+.channel-name,
+.pillar-name,
+.value-title,
+.audience-h,
+.form-lede h2 {
+  font-weight: 700 !important;
+}
+
+body,
+p,
+.lede,
+.hero-sub,
+.mission-strip p,
+.qcard-desc,
+.story-dek,
+.drop-title,
+.pillar-desc,
+.std-body,
+.value-body,
+.form-lede p,
+.foot-brand p,
+.foot-news p {
+  font-weight: 400 !important;
+}
+
+.nav-links a,
+.nav-cta,
+.btn,
+.hero-kicker,
+.qcard-num,
+.reel-tab,
+.stat-label,
+.story-tag,
+.story-foot,
+.channel-handle,
+.channel-cta,
+.std-num,
+.value-num,
+.audience-lab,
+form label,
+form .legal,
+.foot-col h4,
+.foot-news h4,
+.foot-bottom {
+  font-weight: 700 !important;
+  letter-spacing: .12em !important;
+}
