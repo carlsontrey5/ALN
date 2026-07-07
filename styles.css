@@ -1473,3 +1473,17 @@ form .legal,
     margin-bottom: 26px;
   }
 }
+
+
+/* Smaller final hero logo size */
+.hero:not(.compact) .hero-reference-display {
+  width: min(390px, 58vw);
+  max-width: 390px;
+  margin-bottom: 28px;
+}
+@media (max-width: 760px) {
+  .hero:not(.compact) .hero-reference-display {
+    width: min(310px, 64vw);
+    margin-bottom: 24px;
+  }
+}
