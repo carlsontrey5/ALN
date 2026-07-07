@@ -1446,3 +1446,30 @@ form .legal,
     margin-bottom: 28px;
   }
 }
+
+
+/* Hero transparent logo sizing */
+.hero:not(.compact) .hero-reference-display {
+  width: min(520px, 72vw);
+  max-width: 520px;
+  margin: 0 auto 30px;
+  line-height: 0;
+}
+.hero:not(.compact) .hero-reference-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: transparent !important;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 18px 54px rgba(0,0,0,.35));
+}
+@media (max-width: 760px) {
+  .hero:not(.compact) .hero-reference-display {
+    width: min(390px, 78vw);
+    margin-bottom: 26px;
+  }
+}
