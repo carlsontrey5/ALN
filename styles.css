@@ -1334,3 +1334,21 @@ form .legal,
   font-weight: 700 !important;
   letter-spacing: .12em !important;
 }
+
+
+/* Hero ALN white wordmark */
+.hero-logo-display {
+  max-width: min(820px, 92vw);
+  margin-bottom: 30px;
+  line-height: 0;
+}
+.hero-wordmark {
+  display: block;
+  width: min(760px, 88vw);
+  height: auto;
+  filter: drop-shadow(0 24px 70px rgba(0,0,0,.42));
+}
+@media (max-width: 640px) {
+  .hero-logo-display { margin-bottom: 24px; }
+  .hero-wordmark { width: min(520px, 92vw); }
+}
