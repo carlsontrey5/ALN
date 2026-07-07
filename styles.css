@@ -19,6 +19,7 @@
   --line-strong: rgba(255, 255, 255, 0.22);
 
   --adineue: 'Adineue Pro', 'adineue PRO', 'AdineuePRO', 'Helvetica Neue', Arial, sans-serif;
+  --display: 'Space Grotesk', var(--adineue);
   --mono: var(--adineue);
   --sans: var(--adineue);
   --serif: var(--adineue);
@@ -148,7 +149,12 @@ main { position: relative; z-index: 1; }
 .eyebrow .bar { width: 24px; height: 1px; background: var(--volt); }
 .eyebrow b { color: var(--bone); font-weight: 500; }
 
-h1, h2, h3, h4 { font-weight: 700; letter-spacing: -.035em; line-height: 1; }
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: -.035em;
+  line-height: 1;
+}
 h1 em, h2 em, h3 em { font-style: normal; color: var(--volt); }
 .serif { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--volt); letter-spacing: -.01em; }
 
@@ -1550,4 +1556,25 @@ form .legal,
     line-height: 1.22;
     margin-bottom: 26px;
   }
+}
+/* Final title typography: match homepage display font across page titles */
+h1,
+h2,
+h3,
+h4,
+.hero-display,
+.section-head h2,
+.section h2,
+.mission-strip-title,
+.qcard-title,
+.stat-num,
+.story-title,
+.channel-name,
+.pillar-name,
+.std-title,
+.value-title,
+.audience-h,
+.form-lede h2,
+.drop-title {
+  font-family: var(--display) !important;
 }
