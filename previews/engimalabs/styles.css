@@ -1421,3 +1421,28 @@ form .legal,
     margin-bottom: 28px;
   }
 }
+
+
+/* Hero reference image: exact Aliens Last Night front-page treatment */
+.hero:not(.compact) .hero-reference-display {
+  width: min(1180px, 94vw);
+  max-width: 1180px;
+  margin: 0 auto 32px;
+  line-height: 0;
+}
+.hero:not(.compact) .hero-reference-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+@media (max-width: 760px) {
+  .hero:not(.compact) .hero-reference-display {
+    width: 96vw;
+    margin-bottom: 28px;
+  }
+}
