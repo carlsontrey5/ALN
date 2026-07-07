@@ -1489,16 +1489,65 @@ form .legal,
 }
 
 
-/* Final compact front-page logo size */
+/* Final hero: match supplied reference size and subtext */
+.hero:not(.compact) {
+  padding: 138px 0 96px;
+}
+.hero:not(.compact) .hero-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero:not(.compact) .hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto 22px;
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(0,0,0,.42);
+  color: rgba(250,250,250,.72);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  line-height: 1;
+  text-transform: uppercase;
+}
 .hero:not(.compact) .hero-reference-display {
-  width: min(220px, 42vw) !important;
-  max-width: 220px !important;
-  margin-bottom: 24px !important;
+  width: min(710px, 66vw) !important;
+  max-width: 710px !important;
+  margin: 0 auto 22px !important;
+  line-height: 0;
+}
+.hero:not(.compact) .hero-reference-sub {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: rgba(250,250,250,.78);
+  font-size: clamp(20px, 2vw, 25px);
+  line-height: 1.18;
+  letter-spacing: -.045em;
+  text-align: center;
+}
+.hero:not(.compact) .hero-ctas {
+  justify-content: center;
 }
 @media (max-width: 760px) {
+  .hero:not(.compact) {
+    padding: 96px 0 72px;
+  }
   .hero:not(.compact) .hero-reference-display {
-    width: min(180px, 48vw) !important;
-    max-width: 180px !important;
-    margin-bottom: 22px !important;
+    width: min(420px, 88vw) !important;
+    max-width: 420px !important;
+    margin-bottom: 18px !important;
+  }
+  .hero:not(.compact) .hero-reference-sub {
+    max-width: 92vw;
+    font-size: clamp(17px, 5vw, 21px);
+    line-height: 1.22;
+    margin-bottom: 26px;
   }
 }
