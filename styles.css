@@ -1578,3 +1578,31 @@ h4,
 .drop-title {
   font-family: var(--display) !important;
 }
+/* Trademark treatment */
+.tm {
+  font-size: .48em;
+  line-height: 0;
+  vertical-align: super;
+  margin-left: .16em;
+  letter-spacing: .04em;
+  font-weight: 700;
+}
+.hero-kicker .tm {
+  font-size: .72em;
+  margin-left: .2em;
+}
+
+/* Episode archive cards */
+.episode-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 320px;
+}
+.episode-card p {
+  color: var(--ash);
+}
+.episode-card .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
