@@ -3,6 +3,63 @@
    Onyx theme · slick dark · monochrome + volt
    ============================================================ */
 
+@font-face {
+  font-family: 'Adineue Pro';
+  src: url('assets/fonts/adineue/adineuePRO-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adineue Pro';
+  src: url('assets/fonts/adineue/adineuePRO-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adineue Pro';
+  src: url('assets/fonts/adineue/adineuePRO-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adineue Pro';
+  src: url('assets/fonts/adineue/adineuePRO-Black.otf') format('opentype');
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adineue Pro';
+  src: url('assets/fonts/adineue/adineuePRO-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adineue Pro';
+  src: url('assets/fonts/adineue/adineuePRO-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adineue Pro';
+  src: url('assets/fonts/adineue/adineuePRO-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Adineue Pro';
+  src: url('assets/fonts/adineue/adineuePRO-BlackItalic.otf') format('opentype');
+  font-weight: 800 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --void: #000000;
   --carbon: #0A0A0A;
@@ -18,8 +75,8 @@
   --line-soft: rgba(255, 255, 255, 0.06);
   --line-strong: rgba(255, 255, 255, 0.22);
 
-  --adineue: 'Adineue Pro', 'adineue PRO', 'AdineuePRO', 'Helvetica Neue', Arial, sans-serif;
-  --display: 'Space Grotesk', var(--adineue);
+  --adineue: 'Adineue Pro', 'Helvetica Neue', Arial, sans-serif;
+  --display: var(--adineue);
   --mono: var(--adineue);
   --sans: var(--adineue);
   --serif: var(--adineue);
