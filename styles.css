@@ -1677,3 +1677,79 @@ h4,
   align-self: flex-start;
   margin-top: 12px;
 }
+
+/* Adineue spacing correction */
+body,
+p,
+.lede,
+.hero-sub,
+.mission-strip p,
+.qcard-desc,
+.story-dek,
+.pillar-desc,
+.std-body,
+.value-body,
+.form-lede p,
+.foot-brand p,
+.foot-news p,
+.episode-card p {
+  letter-spacing: 0 !important;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+.hero-display,
+.section-head h2,
+.section h2,
+.mission-strip-title,
+.mission-h,
+.qcard-title,
+.stat-num,
+.story-title,
+.channel-name,
+.pillar-name,
+.std-title,
+.value-title,
+.audience-h,
+.form-lede h2,
+.drop-title,
+.episode-card h3 {
+  letter-spacing: -.015em !important;
+}
+
+.nav-brand,
+.nav-links a,
+.nav-cta,
+.btn,
+.hero-kicker,
+.qcard-num,
+.reel-tab,
+.stat-label,
+.story-tag,
+.story-foot,
+.channel-handle,
+.channel-cta,
+.std-num,
+.value-num,
+.audience-lab,
+form label,
+form .legal,
+.foot-col h4,
+.foot-news h4,
+.foot-bottom,
+.drop-platform,
+.drop-time {
+  letter-spacing: .075em !important;
+}
+
+.hero-reference-sub {
+  letter-spacing: -.015em !important;
+  line-height: 1.22;
+}
+
+.tm {
+  letter-spacing: 0 !important;
+}
